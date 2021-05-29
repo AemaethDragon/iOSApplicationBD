@@ -11,7 +11,7 @@ import SwiftUI
 struct iBearDragonApp: App {
     var body: some Scene {
         WindowGroup {
-            AppsPageView()
+            SubscriptionPageView()
         }
     }
 }
