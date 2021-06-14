@@ -8,33 +8,30 @@
 import SwiftUI
 
 struct PaymentButtonView: View {
-    
+    @Environment(\.openURL) var openURL
     var PaymentMethodImage : String
     
     var body: some View {
         
         Button(action: {
             
-            if(PaymentMethodImage == "HaloCE")
+            if(PaymentMethodImage == "Paypal")
             {
-                print("I SAID HALO")
+                openURL(URL(string: "https://www.paypal.com")!)
             }
-            else if (PaymentMethodImage == "AC2")
+            else if (PaymentMethodImage == "Google")
             {
-                print("ASS in CREED")
+                openURL(URL(string: "https://play.google.com/store")!)
             }
-            else if(PaymentMethodImage == "Linux")
+            else if(PaymentMethodImage == "Revolut")
             {
-                print("fuck MacOS")
+                openURL(URL(string: "https://www.revolut.com/pt-PT")!)
             }
             
         }){
         
         HStack(spacing: 8) {
-            Image(PaymentMethodImage).resizable().scaledToFit().padding(0).frame(width: 100, height: 100, alignment: .center)
-                .overlay(RoundedRectangle(cornerRadius: 50)
-                .stroke(Color.blue, lineWidth: 6))
-            
+            Image(PaymentMethodImage).resizable().scaledToFit().padding(0).frame(width: 60, height: 60, alignment: .center)
             }
         }
     }

@@ -13,6 +13,11 @@ struct MyApp: Identifiable {
     var description:      String
     var type:             String
     var image:            String
-    var favorite:         Bool
+    @State var favorite:  Bool
     var price:            Float
+    
+    func SetFavorite(boolean: Bool) -> Void {
+        favorite = boolean
+    }
+    
 }

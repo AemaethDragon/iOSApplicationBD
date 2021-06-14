@@ -21,10 +21,13 @@ struct ButtonView: View {
                 Image(systemName: "arrow.right.circle")
                     .imageScale(.large).foregroundColor(.black)
                 }
-            
+                .imageScale(.large)
+                .font(.system(size: 20, weight: .bold, design: Font.Design.rounded))
+                .foregroundColor(.black)
+                .frame(width: 240, height: 50, alignment: .center)
                 .background(MakeContentArea(_width: 270, _height: 50))
             }
-            .frame(width: 240, height: 50)
+            
         }
     }
 

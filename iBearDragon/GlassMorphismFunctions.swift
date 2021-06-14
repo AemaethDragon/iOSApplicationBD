@@ -39,11 +39,21 @@ func MakeBackground() -> some View {
 }
 
 extension HStack {
-    func GlassmorphismBtn() -> some View {
+    func GlassmorphismBtn(_width: CGFloat = 240, _height: CGFloat = 50) -> some View {
         self.imageScale(.large)
             .font(.system(size: 20, weight: .bold, design: Font.Design.rounded))
             .foregroundColor(.black)
-            .frame(width: 240, height: 50, alignment: .center)
+            .frame(width: _width, height: _height, alignment: .center)
+            .background(MakeContentArea(_width: 270, _height: 50))
+    }
+}
+
+extension VStack {
+    func GlassmorphismBtn(_width: CGFloat = 240, _height: CGFloat = 50) -> some View {
+        self.imageScale(.large)
+            .font(.system(size: 20, weight: .bold, design: Font.Design.rounded))
+            .foregroundColor(.black)
+            .frame(width: _width, height: _height, alignment: .center)
             .background(MakeContentArea(_width: 270, _height: 50))
     }
 }

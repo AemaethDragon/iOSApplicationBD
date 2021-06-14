@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LandingPageView: View {
-    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var UserName: String = ""
     
     var body: some View {
@@ -31,13 +31,9 @@ struct LandingPageView: View {
             }
             .padding()
             
-            ButtonView(DisplayText: "Subscription")
-            
-            ButtonView(DisplayText: "Settings")
-            
-            NavigationLink(destination: LoginPageView(LoginData: LoginInfoData)){
+            NavigationLink(destination: SubscriptionPageView()){
                 HStack(alignment: .center, spacing: nil){
-                    Text("Logout")
+                    Text("Subscription")
                     Spacer()
                     Image(systemName: "arrow.right.circle")
                     
@@ -46,10 +42,22 @@ struct LandingPageView: View {
             }
             .padding()
             
+            Button(action: {
+                self.presentationMode.wrappedValue.dismiss()
+            }){
+                HStack(alignment: .center, spacing: nil){
+                Text("Logout")
+                Spacer()
+                Image(systemName: "arrow.left.circle")
+                
+            }
+            .GlassmorphismBtn()}
+            
             
         }
         .frame(height: 1000)
         .background(MakeBackground())
+        .navigationBarHidden(true)
     }
 }
 

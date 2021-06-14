@@ -10,6 +10,12 @@ import SwiftUI
 
 struct AppsPageView: View {
     
+    init() {
+        UITableView.appearance().separatorStyle = .none
+        UITableViewCell.appearance().backgroundColor = .none
+        UITableView.appearance().backgroundColor = .none
+    }
+    
     var MyApp : [MyApp] = MyAppData
     
     var body: some View {
@@ -21,13 +27,15 @@ struct AppsPageView: View {
                     {
                         ContentDisplayView(MyApp: item)
                     }
+                    .padding(2)
+                    .frame(width: 330)
                 }
-                .background(MakeContentArea(_width: 370, _height: 80))
+                .listRowBackground(MakeContentArea(_width: 340, _height: 60))
             }
-            .frame(height: 800)
-            
+            .frame(height: 700, alignment: .top)
+            .background(MakeContentArea(_width: 380, _height: 720))
         }
-        .frame(height: 850, alignment: .bottom)
+        .frame(height: 1000)
         .background(MakeBackground())
     }
 }

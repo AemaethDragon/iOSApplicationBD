@@ -12,41 +12,71 @@ struct MyAppDetailView: View {
     var MyApp : MyApp
     
     var body: some View {
-
+        
         
         NavigationView {
             ScrollView(.vertical, showsIndicators: false)
             {
-                VStack(alignment: .center, spacing: 20) {
+                VStack(spacing: 20) {
                     // HEADER
-                    MyAppHeaderView(MyApp: MyApp).background(MakeContentArea(_width: 370, _height: 380))
-                    
-                    VStack(alignment: .leading, spacing: 20) {
+                    ZStack{
+                        MyAppHeaderView(MyApp: MyApp)
+                            .frame(width: 360, height: 360)
+                            .background(MakeContentArea(_width: 370, _height: 380))
+                            .padding(50)
+                        
+                        if !MyApp.favorite {
+                            Button(action: {
+                                MyApp.SetFavorite(boolean: true)
+                                print(MyApp.favorite)
+                                
+                            }) {
+                                Image(systemName: "heart")
+                                    .imageScale(.large)
+                                    .frame(width: 350, height: 350, alignment: .topTrailing)
+                                    .foregroundColor(Color(#colorLiteral(red: 0.8585796553, green: 0.3243520481, blue: 0.4353699356, alpha: 1)))
+                            }
+                        }
+                       else {
+                           Button(action: {
+                                MyApp.SetFavorite(boolean: false)
+                                print(MyApp.favorite)
+                           }) {
+                               Image(systemName: "heart.fill")
+                                   .imageScale(.large)
+                                   .frame(width: 350, height: 350, alignment: .topTrailing)
+                                   .foregroundColor(Color(#colorLiteral(red: 0.8585796553, green: 0.3243520481, blue: 0.4353699356, alpha: 1)))
+                           }
+                       }
+                        
+                    }
+                    VStack(spacing: 20) {
                         // TITLE
                         Text(MyApp.name)
-                            .font(.largeTitle)
+                            .font(.title)
                             .fontWeight(.heavy)
-                            
+                            .frame(width: 350, alignment: .leading)
+                        
                         
                         // HEADLINE
                         Text(MyApp.description)
                             .font(.headline)
-                            .multilineTextAlignment(.leading)
+                            .frame(width: 350, alignment: .leading)
                         
                         // NUTRIENTS
                         
                         // SUBHEADLINE
                         Text("Learn more about \(MyApp.name)".uppercased())
-                            .fontWeight(.bold)
+                            .fontWeight(.heavy)
+                            .frame(width: 350, alignment: .leading)
                         
                         // DESCRIPTION
                         Text(MyApp.description)
-                            .multilineTextAlignment(.leading)
+                            .frame(width: 350, alignment: .leading)
                         
                         // LINK
                     }
-                    .padding(.horizontal, 20)
-                    .frame(maxWidth: 640, alignment: .center)
+                    .frame(width: 350)
                     .background(MakeContentArea(_width: 370, _height: 200))
                 }
                 .navigationBarTitle(MyApp.name, displayMode: .inline)
