@@ -13,27 +13,20 @@ struct ButtonView: View {
     
     var body: some View {
         
-        Button(action: {
+        Button(action: {})
+        {
+            HStack(spacing: 8) {
+                Text(DisplayText).foregroundColor(.black)
+                Spacer()
+                Image(systemName: "arrow.right.circle")
+                    .imageScale(.large).foregroundColor(.black)
+                }
             
-                print("exiting onboarding")
-            
-           
-        }){
-        
-        HStack(spacing: 8) {
-            Text(DisplayText).foregroundColor(.gray)
-            Image(systemName: "arrow.right.circle")
-                .imageScale(.large).foregroundColor(.gray)
-        }
-        .padding(.horizontal, 16)
-        .padding(.vertical, 10)
-        .background(
-            Capsule().strokeBorder(Color.gray,
-                                   lineWidth: 5).frame(width: 250, height: 40)
-        )
+                .background(MakeContentArea(_width: 270, _height: 50))
+            }
+            .frame(width: 240, height: 50)
         }
     }
-}
 
 
 struct ButtonView_Previews: PreviewProvider {

@@ -13,24 +13,27 @@ struct AppsPageView: View {
     var MyApp : [MyApp] = MyAppData
     
     var body: some View {
-        NavigationView
-        {
+        HStack{
             List {
                 ForEach(MyApp.shuffled()) { item in
                     NavigationLink(
                         destination: MyAppDetailView(MyApp: item))
                     {
                         ContentDisplayView(MyApp: item)
-                            .padding(.vertical, 4)
                     }
                 }
-            }.navigationTitle("Store")
+                .background(MakeContentArea(_width: 370, _height: 80))
+            }
+            .frame(height: 800)
+            
         }
+        .frame(height: 850, alignment: .bottom)
+        .background(MakeBackground())
     }
 }
-        
 struct AppsPageView_Previews: PreviewProvider {
     static var previews: some View {
         AppsPageView()
     }
 }
+

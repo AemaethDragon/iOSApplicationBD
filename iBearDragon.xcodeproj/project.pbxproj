@@ -23,6 +23,9 @@
 		22EB8209265D5D6A00022053 /* MyAppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB8208265D5D6A00022053 /* MyAppData.swift */; };
 		22EB820C265D6D2D00022053 /* MyAppDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB820B265D6D2D00022053 /* MyAppDetailView.swift */; };
 		22EB820E265D6DE000022053 /* MyAppHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB820D265D6DE000022053 /* MyAppHeaderView.swift */; };
+		8C52640F2676B91600709BC3 /* GlassMorphismFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C52640E2676B91600709BC3 /* GlassMorphismFunctions.swift */; };
+		8C5264112676DD8400709BC3 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5264102676DD8400709BC3 /* LoginData.swift */; };
+		8C5264132676DDAE00709BC3 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5264122676DDAE00709BC3 /* LoginModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		22EB8208265D5D6A00022053 /* MyAppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppData.swift; sourceTree = "<group>"; };
 		22EB820B265D6D2D00022053 /* MyAppDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppDetailView.swift; sourceTree = "<group>"; };
 		22EB820D265D6DE000022053 /* MyAppHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppHeaderView.swift; sourceTree = "<group>"; };
+		8C52640E2676B91600709BC3 /* GlassMorphismFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassMorphismFunctions.swift; sourceTree = "<group>"; };
+		8C5264102676DD8400709BC3 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
+		8C5264122676DDAE00709BC3 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 			children = (
 				22EB81D6265D4F7A00022053 /* iBearDragonApp.swift */,
 				22EB820B265D6D2D00022053 /* MyAppDetailView.swift */,
+				8C52640E2676B91600709BC3 /* GlassMorphismFunctions.swift */,
 				22EB8207265D5D5D00022053 /* Data */,
 				22EB8204265D59FF00022053 /* View */,
 				22EB8201265D50B700022053 /* Model */,
@@ -157,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				22EB8202265D510300022053 /* AppsModel.swift */,
+				8C5264122676DDAE00709BC3 /* LoginModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				22EB8208265D5D6A00022053 /* MyAppData.swift */,
+				8C5264102676DD8400709BC3 /* LoginData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -316,11 +325,14 @@
 				22EB820E265D6DE000022053 /* MyAppHeaderView.swift in Sources */,
 				22EB8209265D5D6A00022053 /* MyAppData.swift in Sources */,
 				22EB8203265D510300022053 /* AppsModel.swift in Sources */,
+				8C52640F2676B91600709BC3 /* GlassMorphismFunctions.swift in Sources */,
 				2219E59F26610B87005F1C77 /* LoginPageView.swift in Sources */,
 				22EB81D9265D4F7A00022053 /* AppsPageView.swift in Sources */,
 				22EB81D7265D4F7A00022053 /* iBearDragonApp.swift in Sources */,
 				2219E59B2660FE36005F1C77 /* LandingPageView.swift in Sources */,
 				22D2B41E266164EC00F6E71C /* PaymentButtonView.swift in Sources */,
+				8C5264112676DD8400709BC3 /* LoginData.swift in Sources */,
+				8C5264132676DDAE00709BC3 /* LoginModel.swift in Sources */,
 				22D2B41C2661642A00F6E71C /* SubscriptionPageView.swift in Sources */,
 				22EB8206265D5A3C00022053 /* ContentDisplayView.swift in Sources */,
 				22EB820C265D6D2D00022053 /* MyAppDetailView.swift in Sources */,
