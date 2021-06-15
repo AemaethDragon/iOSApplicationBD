@@ -16,7 +16,7 @@ struct AppsPageView: View {
         UITableView.appearance().backgroundColor = .none
     }
     
-    var MyApp : [MyApp] = MyAppData
+    var MyApp : [MyApp] = AllAppsLoadedData.MyAppLoadedData
     
     var body: some View {
         HStack{

@@ -37,6 +37,6 @@ struct ContentDisplayView_Previews:PreviewProvider
 {
     static var previews: some View
     {
-        ContentDisplayView(MyApp: MyAppData[0]).previewLayout(.sizeThatFits)
+        ContentDisplayView(MyApp: AllAppsLoadedData.MyAppLoadedData[0]).previewLayout(.sizeThatFits)
     }
 }

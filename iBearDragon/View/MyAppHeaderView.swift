@@ -26,8 +26,7 @@ struct MyAppHeaderView: View {
 
 struct MyAppHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        MyAppHeaderView(MyApp:
-        MyAppData[8]).previewLayout(.sizeThatFits)
+        MyAppHeaderView(MyApp: AllAppsLoadedData.MyAppLoadedData[0]).previewLayout(.sizeThatFits)
     }
   }
 }

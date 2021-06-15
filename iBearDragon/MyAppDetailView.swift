@@ -27,7 +27,7 @@ struct MyAppDetailView: View {
                         
                         if !MyApp.favorite {
                             Button(action: {
-                                MyApp.SetFavorite(boolean: true)
+                                //MyApp.SetFavorite(boolean: true)
                                 print(MyApp.favorite)
                                 
                             }) {
@@ -39,7 +39,7 @@ struct MyAppDetailView: View {
                         }
                        else {
                            Button(action: {
-                                MyApp.SetFavorite(boolean: false)
+                                //MyApp.SetFavorite(boolean: false)
                                 print(MyApp.favorite)
                            }) {
                                Image(systemName: "heart.fill")
@@ -93,6 +93,6 @@ struct MyAppDetailView: View {
 
 struct MyAppDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        MyAppDetailView(MyApp: MyAppData[1])
+        MyAppDetailView(MyApp: AllAppsLoadedData.MyAppLoadedData[1])
     }
 }

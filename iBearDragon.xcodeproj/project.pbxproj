@@ -23,6 +23,7 @@
 		22EB8209265D5D6A00022053 /* MyAppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB8208265D5D6A00022053 /* MyAppData.swift */; };
 		22EB820C265D6D2D00022053 /* MyAppDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB820B265D6D2D00022053 /* MyAppDetailView.swift */; };
 		22EB820E265D6DE000022053 /* MyAppHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB820D265D6DE000022053 /* MyAppHeaderView.swift */; };
+		8C18A8E42678B2AC001A18FA /* appInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C18A8E32678B2AC001A18FA /* appInfo.json */; };
 		8C52640F2676B91600709BC3 /* GlassMorphismFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C52640E2676B91600709BC3 /* GlassMorphismFunctions.swift */; };
 		8C5264112676DD8400709BC3 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5264102676DD8400709BC3 /* LoginData.swift */; };
 		8C5264132676DDAE00709BC3 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5264122676DDAE00709BC3 /* LoginModel.swift */; };
@@ -68,6 +69,7 @@
 		22EB8208265D5D6A00022053 /* MyAppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppData.swift; sourceTree = "<group>"; };
 		22EB820B265D6D2D00022053 /* MyAppDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppDetailView.swift; sourceTree = "<group>"; };
 		22EB820D265D6DE000022053 /* MyAppHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppHeaderView.swift; sourceTree = "<group>"; };
+		8C18A8E32678B2AC001A18FA /* appInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = appInfo.json; path = ../../../../../Desktop/Africa/Africa/Data/appInfo.json; sourceTree = "<group>"; };
 		8C52640E2676B91600709BC3 /* GlassMorphismFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassMorphismFunctions.swift; sourceTree = "<group>"; };
 		8C5264102676DD8400709BC3 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
 		8C5264122676DDAE00709BC3 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 		22EB8207265D5D5D00022053 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				8C18A8E32678B2AC001A18FA /* appInfo.json */,
 				22EB8208265D5D6A00022053 /* MyAppData.swift */,
 				8C5264102676DD8400709BC3 /* LoginData.swift */,
 			);
@@ -297,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22EB81DE265D4F7C00022053 /* Preview Assets.xcassets in Resources */,
+				8C18A8E42678B2AC001A18FA /* appInfo.json in Resources */,
 				22EB81DB265D4F7C00022053 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

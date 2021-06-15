@@ -7,17 +7,12 @@
 
 import SwiftUI
 
-struct MyApp: Identifiable {
+struct MyApp: Decodable, Identifiable {
     var id =              UUID()
     var name:             String
     var description:      String
     var type:             String
     var image:            String
-    @State var favorite:  Bool
+    var favorite:         Bool
     var price:            Float
-    
-    func SetFavorite(boolean: Bool) -> Void {
-        favorite = boolean
-    }
-    
 }
