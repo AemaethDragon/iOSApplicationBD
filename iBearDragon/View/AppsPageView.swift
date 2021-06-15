@@ -10,6 +10,8 @@ import SwiftUI
 
 struct AppsPageView: View {
     
+    //var coverImages = Bundle.main.decode("covers.json")
+    
     init() {
         UITableView.appearance().separatorStyle = .none
         UITableViewCell.appearance().backgroundColor = .none

@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct MyApp: Decodable, Identifiable {
-    var id =              UUID()
+struct MyApp: Identifiable, Codable {
+    var id :              Int
     var name:             String
     var description:      String
     var type:             String
